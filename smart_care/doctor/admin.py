@@ -19,6 +19,7 @@ admin.site.register(models.AvailableTime)
 admin.site.register(models.Specialization,specializationAdmin)
 admin.site.register(models.Designation,designationAdmin)
 admin.site.register(models.Doctor,DoctorAdmin)
+admin.site.register(models.Review)
 
 
 
