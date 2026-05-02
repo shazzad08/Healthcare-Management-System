@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'patient',
     'service',
     'rest_framework',
+    
 ]
 
 MIDDLEWARE = [
