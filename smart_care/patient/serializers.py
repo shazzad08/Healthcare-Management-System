@@ -29,5 +29,9 @@ class RegistrationSerializer(serializers.ModelSerializer):
         account = User(username = username, email=email, first_name = first_name, last_name = last_name)
         print(account)
         account.set_password(password)
+        
+        account.is_active= False   # deactivate account until email verification
+        
+        
         account.save()
         return account
