@@ -97,7 +97,7 @@ class UserLoginApiView(APIView):
 
                 if user.is_active:
 
-                    # LOGIN SESSION to display the logged in user in the top right in the window
+                    # LOGIN SESSION to display the logged in username to the top right in the window
                     login(request, user)
 
                    
