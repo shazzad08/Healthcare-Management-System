@@ -182,8 +182,8 @@ python manage.py createsuperuser
 python manage.py runserver
 ```
 
-The API will be available at `http://127.0.0.1:8000/`.  
-The admin panel is accessible at `http://127.0.0.1:8000/admin/`.
+The API will be available at `https://healthcare-management-system-jrls.onrender.com`.  
+The admin panel is accessible at `https://healthcare-management-system-jrls.onrender.com/admin/`.
 
 ---
 
