@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from rest_framework import viewsets
+from rest_framework import viewsets,filters
 from . import models
 from . import serializers
 from rest_framework.views import APIView
@@ -19,12 +19,18 @@ from rest_framework.authentication import (
     TokenAuthentication,
     SessionAuthentication
 )
+
+from.pagination import MyPagination
 # Create your views here.
 
 class PatientViewset(viewsets.ModelViewSet):
 
     queryset = models.Patient.objects.all()
     serializer_class = serializers.PatientSerializer
+    
+    #pagination
+    filter_backends = [filters.SearchFilter]
+    pagination_class = MyPagination
 
 class RegistrationApiview(APIView):
     serializer_class = serializers.RegistrationSerializer
