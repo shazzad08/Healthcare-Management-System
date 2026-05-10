@@ -30,7 +30,14 @@ SECRET_KEY = 'django-insecure-%=wr^zb^52ou^l(p34xn^vtk_v%fl--rt_-vv7d48%)q7_xs^@
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://healthcare-management-system-jrls.onrender.com",
+]
+ALLOWED_HOSTS = [
+    "healthcare-management-system-jrls.onrender.com",
+    "127.0.0.1",
+    "localhost",
+]
 
 # Application definition
 
