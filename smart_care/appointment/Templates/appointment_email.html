@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Online Appointment</title>
+  </head>
+
+  <body style="font-family: Arial, sans-serif">
+    <div
+      style="
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+      "
+    >
+      <h2 style="color: #2c3e50">
+        Hello {{ user.first_name }} {{ user.last_name }},
+      </h2>
+
+      <p>Your doctor is now online for your appointment.</p>
+
+      <p>
+        <strong>Doctor Name:</strong>
+        Dr. {{ doctor.user.first_name }} {{ doctor.user.last_name }}
+      </p>
+
+      <p>Please click the button below to join the meeting.</p>
+
+      <a
+        href="{{ doctor.meet_link }}"
+        target="_blank"
+        style="
+          display: inline-block;
+          padding: 12px 20px;
+          background: #3498db;
+          color: white;
+          text-decoration: none;
+          border-radius: 5px;
+        "
+      >
+        Join Meeting
+      </a>
+
+      <br /><br />
+
+      <p>If the button does not work, use this link:</p>
+
+      <p>{{ doctor.meet_link }}</p>
+
+      <hr />
+
+      <p style="font-size: 14px; color: gray">Smart Care Hospital</p>
+    </div>
+  </body>
+</html>
