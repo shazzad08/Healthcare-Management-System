@@ -10,6 +10,7 @@
 
 Smart Care is a RESTful backend system built to streamline healthcare operations. It handles patient registration and authentication, doctor profile management, appointment scheduling, medical service listings, and customer inquiries — all exposed through clean, well-structured API endpoints designed for seamless frontend integration.
 
+Live: https://healthcare-management-system-jrls.onrender.com/
 ---
 
 ##Tech Stack
